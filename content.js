@@ -10,7 +10,7 @@
    ===================================================================== */
 
 const SITE = {
-  name: "Your Name",                 // shown in the header and homepage
+  name: "Shuvam",                 // shown in the header and homepage
   tagline: "iPhone photography, everyday light, and the road to my first camera.",
 
   // Homepage intro (your own words)
