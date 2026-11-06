@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Photo Journal</title>
+  <meta name="description" content="A personal photography portfolio and journal, shot mostly on iPhone.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" id="brand">Photo Journal</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#albums" data-nav="albums">Albums</a>
+      <a href="#timeline" data-nav="timeline">Timeline</a>
+      <a href="#journal" data-nav="journal">Journal</a>
+      <a href="#about" data-nav="about">About</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch light or dark mode" title="Switch light or dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer" id="footer"></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb-close" data-lb="close" aria-label="Close">×</button>
+    <button class="lb-arrow lb-prev" data-lb="prev" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+      <img id="lbImg" alt="">
+      <figcaption>
+        <p class="lb-caption" id="lbCaption"></p>
+        <p class="lb-meta" id="lbMeta"></p>
+      </figcaption>
+    </figure>
+    <button class="lb-arrow lb-next" data-lb="next" aria-label="Next photo">›</button>
+  </dialog>
+
+  <!-- Your content lives in content.js. Edit that file to add photos, albums and journal posts. -->
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
